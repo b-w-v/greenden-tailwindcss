@@ -16,7 +16,7 @@
 
         <!-- Hamburger Icon for Mobile -->
         <div class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-800 cursor-pointer">
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-800 cursor-pointer">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>
         </div>
@@ -27,13 +27,32 @@
                 <a class="hover:underline hover:text-black" href="#">Home</a>
             </li>
             <li>
-                <a href="product.html" hover:underline hover:text-black" href="#">Products</a>
+                <a href="product.html" class="hover:underline hover:text-black" href="#">Products</a>
             </li>
             <li>
                 <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
             </li>
         </ul>
     </nav>
+
+    <!--Side navbar-->
+    <section id="sidenav" class="bg-green-100 transition-all duration-1000 fixed z-20 top-0" style="width: 50%;height: 100vh;right: -50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex-col md:flex gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Home</a>
+            </li>
+            <li>
+                <a href="product.html" hover:underline hover:text-black" href="#">Products</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline hover:text-black" href="#">Contact</a>
+            </li>
+        </ul>
+
+    </section>
 
     <!--Header Section-->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center items-center">
@@ -156,7 +175,12 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime magnam nemo quas ratione accusantium doloremque optio sed unde! Quo iure aspernatur porro rem? Est illum ex vitae dolor nisi voluptatem.</p>
         <p>@ 2021 Greenday.com</p>
 
-     </Section>
+    </Section>
+
+    <script src="./index.js"></script>
+
+
+    
 
 
 </body>
